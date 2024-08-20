@@ -1,0 +1,182 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #f5f6f7;
+  margin: 0 1px;
+  padding: 65px 0 0;
+}
+
+#header{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, .4);
+  padding: 0 40px;
+  background-color: inherit;
+}
+
+#header-img{
+  width: 30%;
+  min-width: 250px;
+  height: calc(auto + 100px);
+}
+
+#nav-bar{
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#nav-bar a.nav-link, p.standard, p.details{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+main{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  /* background-color: yellow; */
+}
+
+.description{
+  text-align: center;
+}
+
+#form input{
+  display: block;
+  margin: 0 auto 10px;
+  height: 30px;
+}
+
+input#email{
+  width: 300px;
+}
+
+#submit, button{
+  border: none;
+  background-color: rgb(255, 217, 0);
+  font-weight: 800;
+  padding: 5px 20px;
+}
+
+#submit:hover, button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 196, 0);
+}
+
+#features{
+  width: 100%;
+  padding: 0 10px;
+}
+
+h2.standard{
+  margin-bottom: -15px;
+}
+
+.video-container{
+  width: 60%;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+}
+
+#pricing{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.tag{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 280px;
+   min-width: 280px;
+  margin: 30px auto 0;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.tag-header{
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  padding: 20px 0;
+  font-weight: 600;
+  z-index: 999;
+  background-color: #d6d9e0;
+}
+
+.price{
+  font-size: 22px;
+  font-weight: 800;
+}
+
+footer{
+  box-sizing: unset;
+  background-color: #d6d9e0;
+  text-align: center;
+  height: 70px;
+  width: 100%;
+  max-width: 920px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+  width: 30%;
+  max-width: 200px;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+
+}
+
+footer p{
+  margin: 0;
+}
+
+footer ul li{
+  list-style: none;
+  margin: 0 0 5px;
+}
+
+footer a{
+  color: black;
+}
+
+
+@media only screen and (max-width: 650px) {
+  #nav-bar, ul.about{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer{
+    width: 100vw;
+  }
+}
+
+@media(max-width: 915px){
+  #pricing{
+    flex-direction: column;
+  }
+
+}
+
